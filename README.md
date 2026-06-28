@@ -25,7 +25,7 @@ Clone the repository and install the dependencies:
 
 ```bash
 git clone https://github.com/ayka-667/PteroBackup.git
-cd pterodactyl-backup-tool
+cd PteroBackup
 pip install -r requirements.txt
 ```
 
@@ -48,7 +48,7 @@ This must be a **Client API** key, created from your account settings. **Applica
 On first run, the script generates a `config.json` file in the working directory and exits so you can fill it in:
 
 ```bash
-python pterodactyl_backup.py
+python main.py
 ```
 
 Edit `config.json`:
