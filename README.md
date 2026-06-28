@@ -17,7 +17,7 @@ Designed for self-hosted setups where you want an off-VPS copy of your data on a
 
 - Python 3.8 or later
 - A Pterodactyl panel with API access enabled
-- A **Client API key** (not an Application API key — see [Getting an API key](#getting-an-api-key))
+- A **Client API key** (not an Application API key - see [Getting an API key](#getting-an-api-key))
 
 ## Installation
 
@@ -38,8 +38,8 @@ pip install requests pymysql rich
 ## Getting an API key
 
 1. Log in to your Pterodactyl panel.
-2. Open **Account Settings** (top right) → **API Credentials**.
-3. Create a new key and copy the value shown — it starts with `ptlc_` and will not be displayed again.
+2. Open **Account Settings** (top right) -> **API Credentials**.
+3. Create a new key and copy the value shown - it starts with `ptlc_` and will not be displayed again.
 
 This must be a **Client API** key, created from your account settings. **Application API** keys (created from the Admin panel) are a different, higher-privilege credential and will be rejected by the endpoints this tool uses, with a `403 Forbidden` response.
 
@@ -89,7 +89,7 @@ backup_destination/
     └── <database-name>.sql
 ```
 
-Each run overwrites existing files in the destination. There is no incremental sync — every run re-downloads the full file tree.
+Each run overwrites existing files in the destination. There is no incremental sync - every run re-downloads the full file tree.
 
 ## How database dumps work
 
